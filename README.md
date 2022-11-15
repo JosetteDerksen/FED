@@ -39,15 +39,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.apple.com/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Homepagina 
   ![image](https://user-images.githubusercontent.com/70659177/201884726-cf7726de-8681-4390-bb5d-5e4d32886ab9.png)
   ![image](https://user-images.githubusercontent.com/70659177/201884801-3916c355-a86d-47fd-b082-c2b3ead395de.png)
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
-
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Accessories  
+  ![image](https://user-images.githubusercontent.com/70659177/201885550-e508df40-b581-4bcc-9d0d-1092a2a362a1.png)
+  ![image](https://user-images.githubusercontent.com/70659177/201885655-f96d6dd6-1bad-440a-9afc-dbae89fa4eda.png)
  
 </details>
 

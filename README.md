@@ -40,14 +40,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina 
-  ![image](https://user-images.githubusercontent.com/70659177/201884726-cf7726de-8681-4390-bb5d-5e4d32886ab9.png)
-  ![image](https://user-images.githubusercontent.com/70659177/201884801-3916c355-a86d-47fd-b082-c2b3ead395de.png)
+  ![Group 1](https://user-images.githubusercontent.com/70659177/205017983-679998bd-34c5-4c7f-a5b2-b67cf2536241.png)
+
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Accessories  
-  ![image](https://user-images.githubusercontent.com/70659177/201885550-e508df40-b581-4bcc-9d0d-1092a2a362a1.png)
-  ![image](https://user-images.githubusercontent.com/70659177/201885655-f96d6dd6-1bad-440a-9afc-dbae89fa4eda.png)
- 
+  ![FireShot Capture 009 - Apple accessoires voor Apple Watch, iPhone, iPad, iPod en Mac - Apple_ - www apple com](https://user-images.githubusercontent.com/70659177/205018516-2f99c115-634c-4d1a-85b4-e1e99c8499b9.png)
+
 </details>
 
 

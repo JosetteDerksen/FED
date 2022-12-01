@@ -130,9 +130,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | Arsen          | Randy              | Tim          | Josette          |
+  | Semantiek → klopt het dat bepaalde elementen onder secties vallen → zie schetsen.       | ---                | ---          | Kloppen mij breakdownschetsen?              |
+  | In welke mate en op watvoor manier is het van belang dat wij rekening houden met toegankelijkheid voor gebruikers?  | en dit             | en ik dit    | De website veranderd af en toe, welke versie moet ik dan namaken?   |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 

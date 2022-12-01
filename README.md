@@ -101,10 +101,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   Homepagina
-  ![Homepagina](https://user-images.githubusercontent.com/70659177/205027989-465ba619-83d7-45b1-aad5-75b37edd6055.png)
+  ![Homepagina](https://user-images.githubusercontent.com/70659177/205082701-1ddcd621-13e8-4050-836f-8e6bd34e7369.png)
+
   
   Accessoires pagina
-  ![Accessoires](https://user-images.githubusercontent.com/70659177/205028310-fee8e640-1a3c-4917-b234-7e5c1774547a.png)
+  ![Accessoires](https://user-images.githubusercontent.com/70659177/205082744-6e828f10-7c3d-4e2c-88c9-6e5cd08633a4.png)
+
 
 </details>
 

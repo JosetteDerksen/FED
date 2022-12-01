@@ -32,7 +32,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Je website
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -101,11 +101,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   Homepagina
-  ![Homepagina](https://user-images.githubusercontent.com/70659177/205082701-1ddcd621-13e8-4050-836f-8e6bd34e7369.png)
+  ![Homepagina](https://user-images.githubusercontent.com/70659177/205083254-1c643d2b-e494-4833-bc9c-76afa156828e.png)
+
 
   
   Accessoires pagina
-  ![Accessoires](https://user-images.githubusercontent.com/70659177/205082744-6e828f10-7c3d-4e2c-88c9-6e5cd08633a4.png)
+  ![Accessoires](https://user-images.githubusercontent.com/70659177/205083282-2471185c-f472-40d5-a97a-b8e9a093182b.png)
+
 
 
 </details>

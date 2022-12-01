@@ -94,19 +94,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Breakdownschets (week 1)
+## Breakdownschets (week 3)
 
 <details>
-  <summary>uitwerken na afloop 2e werkgroep</summary>
+  <summary>uitwerken na afloop 3e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  Homepagina
+  ![Homepagina](https://user-images.githubusercontent.com/70659177/205027989-465ba619-83d7-45b1-aad5-75b37edd6055.png)
+  
+  Accessoires pagina
+  ![Accessoires](https://user-images.githubusercontent.com/70659177/205028310-fee8e640-1a3c-4917-b234-7e5c1774547a.png)
 
 </details>
 
@@ -114,13 +112,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Voortgang 1 (week 2)
+## Voortgang 1 (week 3)
 
 <details>
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Hoewel ik de meeste code alweer was vergeten, helpen de oefeningen erg om het weer een beetje in de vingers te krijgen. Ik heb moeite om elementen zoals grid of flexbox te blijven snappen en de titels/namen (hoe noem je dat?) te onthouden. Bij de breakdownschetsen weet ik niet zeker of ik de juiste elementen op de goede plek heb gezet en in elkaar heb geimplementeerd. 
+  Ik ben nog niet begonnen met het coderen van mijn eigen website naarmate we 2 dagen terug pas zijn begonnen met de breakdownschetsen. 
+  
 
 
   ### Agenda voor meeting

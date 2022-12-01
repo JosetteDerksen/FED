@@ -61,27 +61,35 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  - Je moet al heel veel shortcuts weten voordat je er handig gebruik van kan maken.
+  - Spreekt Engelse woorden heel Nederlands uit waardoor het niet altijd duidelijk is.
+  - Zegt heel vaak 'koppeling'.
+  - Kan niet typen als de verteller aanstaat.
+  - Er wordt gebruikt gemaakt van heel veel divjes. 
+  - Weinig onderbouwende tekst in de code zelf zoals een alt-tekst.  
+  - Er wordt wel gebruikt gemaakt van kopjes en linkjes. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+    Sommige punten zitten meer op Windows niveau dan op Apple niveau, zoals de shortcuts, het niet kunnen typen en dat Engelse woorden op een Nederlandse manier worden uitsproken. Op andere punten kan ik wel wat veranderen zoals dat er veel gebruikt wordt gemaakt van divjes inplaats van de juiste elementen en onderbouwende teksten toevoegen die screenreader kunnen voorlezen zodat een blind iemand weet wat er op een afbeelding staat. 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  - Veel shortcuts maar opzich makkelijk te vinden. 
+  - Hover over links werkt. Komt een blauwe streep onder te staan. 
+  - Muis veranderd in een handje op de klikbare plekken. 
+  - Kan door de carousel scrollen met m'n pijltjes toetsen. 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  - Met het trilding om parkinson na te bootsen was het vreselijk moeilijk om te typen. Typt snel dubbele letters. 
+  
+  Ik kan dit oplossen door het toetsenbord minder gevoelig te maken? 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  - Hover over navigatie zie je een klein beetje kleur verandering (van grijs naar wit) maar niet genoeg voor als je iets slechter kan zien.
+  - Navigatie is heel erg klein vergeleken met de rest van de website. 
+  ![image](https://user-images.githubusercontent.com/70659177/205011242-6a0a51e5-8485-41f9-8622-efea607a96d9.png)
+  ![image](https://user-images.githubusercontent.com/70659177/205011278-d259293e-c710-4a4a-94b4-35e239a16a55.png)
+  - Contrast op de rest van de website best goed. Veel gebruik gemaakt van zwart-wit. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Ik kan de navigatie groter maken met een betere hover kleur. 
 
 </details>
 

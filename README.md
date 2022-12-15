@@ -126,28 +126,43 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ik ben nog niet begonnen met het coderen van mijn eigen website naarmate we 2 dagen terug pas zijn begonnen met de breakdownschetsen. 
   
 
-
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Arsen          | Randy              | Tim          | Josette          |
-  | Semantiek → klopt het dat bepaalde elementen onder secties vallen → zie schetsen.       | ---                | ---          | Kloppen mij breakdownschetsen?              |
-  | In welke mate en op watvoor manier is het van belang dat wij rekening houden met toegankelijkheid voor gebruikers?  | en dit             | en ik dit    | De website veranderd af en toe, welke versie moet ik dan namaken?   |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+    | Arsen          | Randy          | Tim    | Josette        |
+  | ---            | ---                | ---          | ---              |
+  | Semantiek → klopt het dat bepaalde elementen onder secties vallen → zie schetsen.   | Hoe pak je het maken van een submenu aan? | Mag je bij onderstreepte woord een < u > element gebruiken?  | Kloppen mij breakdownschetsen?    |
+  | In welke mate en op watvoor manier is het van belang dat wij rekening houden met toegankelijkheid voor gebruikers? | Wanneer is iets een section? | Mag je bij schuingedrukt woord een < em >, < i > element gebruiken? | De website veranderd af en toe, welke versie moet ik dan namaken? |
+  | ...            | ...                | Zijn het meerdere klikbare afbeeldingen of radio buttons?         | ...              |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+**< title > Startpagina Apple < /title >**
+-   Consistent houden. Of eerst de pagina titel en dan de naam of andersom maar dit wel overal hetzelfde.
+
+**Navigatie:**
+-   Elementen die buiten het hamburgermenu blijven staan, maar wel bij de navigatie horen, krijgen hun eigen navigatie. Zo kan je het ene menu verbergen onder een button en de ander niet.
+    
+**Titels**
+-   H1 kan op de startpagina ook een logo zijn of verborgen omdat er gewoon geen h1 is. Op de andere pagina’s is meestal wel een duidelijke h1
+-   H1 is belangrijk voor google resultaten.
+-   H2 moet altijd voor de h3 etc. In de CSS kan de volgorde worden aangepast.
+
+**Img**
+-   Als img als decoratie wordt gebruikt moet de alt worden leeg gelaten of de afbeelding moet via css worden ingevoegd.
+
+**Links/buttons**
+-   Links gaan naar andere pagina.
+-   Buttons blijven op dezelfde pagina, voeren een actie uit. Bijv. hamburger menu in- en uitvouwen is een button.
+-   Veel website laten links zien als buttons.
+-   Onderscheid is belangrijk voor screenreaders. Zo kan je deze alle linkjes of alle formulieren laten afgaan, maar dan moet wel duidelijk zijn wat wat is.
+
+**Talen**
+
+-   Engelse woorden (of van andere talen) op een Nederlandse site, kun je voorzien van een span en een lang attribute.
 
 </details>
-
-
 
 
 
@@ -155,6 +170,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken voor 2e voortgang</summary>
+![voortgang2](https://user-images.githubusercontent.com/70659177/207876470-71b5685d-147d-4075-9411-9ddcacd94bf6.png)
+Ik kwam een beetje laat op gang, omdat ik niet wist waar ik moest beginnen, maar langzaam komt het bij elkaar. 
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
@@ -163,12 +180,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Randy      | Josette          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | Hoe kun je het verticaal positioneren van een list-style-image het besten aanpakken?  | Waarom werkt mijn hamburgermenu niet?           | en ik dit    | en dan ik dat    |
+  | Hoe verberg je zelfgemaakte semantische kopjes? | Hoe komt het dat alles in mijn header te hoog staat terwijl ik het heb gecentreerd? | nog een punt | dit wil ik zeker |
+  | Hoe schrijf je een zin waarin sommige woorden random wel of geen hoofdletters hebben?        | Hoe kan een afbeelding buiten beeld vallen zonder dat het beeld breder wordt?                | ...          | ...              |
+  | Als Header, footer gezamenlijke kleur bij general styling plaatsen (DRY) of beter ieder bij eigen selector declareren?          | Kan ik een span gebruiken voor het hamburgermenu?               | ...          | ...              |
+  | Hoe kan ik mijn CSS beter indelen?         | Op de Apple website zijn de categorieën in het hamburger menu background afbeeldingen. Kan ik dit beter tekst laten?              | ...          | ...              |
+| ...            | Zijn de afbeeldingen decoratief of niet?               | ...          | ...              |
+| ...          | Is de footer ook een nav of niet en moeten de uitklapmenu’s werken?             |
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

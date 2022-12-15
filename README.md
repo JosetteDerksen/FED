@@ -129,7 +129,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-    | Arsen          | Randy          | Tim    | Josette        |
+  | Arsen          | Randy          | Tim    | Josette        |
   | ---            | ---                | ---          | ---              |
   | Semantiek → klopt het dat bepaalde elementen onder secties vallen → zie schetsen.   | Hoe pak je het maken van een submenu aan? | Mag je bij onderstreepte woord een < u > element gebruiken?  | Kloppen mij breakdownschetsen?    |
   | In welke mate en op watvoor manier is het van belang dat wij rekening houden met toegankelijkheid voor gebruikers? | Wanneer is iets een section? | Mag je bij schuingedrukt woord een < em >, < i > element gebruiken? | De website veranderd af en toe, welke versie moet ik dan namaken? |
@@ -170,11 +170,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken voor 2e voortgang</summary>
-![voortgang2](https://user-images.githubusercontent.com/70659177/207876470-71b5685d-147d-4075-9411-9ddcacd94bf6.png)
-Ik kwam een beetje laat op gang, omdat ik niet wist waar ik moest beginnen, maar langzaam komt het bij elkaar. 
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik kwam een beetje laat op gang, omdat ik niet wist waar ik moest beginnen, maar langzaam komt het bij elkaar. 
+  
+  ![voortgang2](https://user-images.githubusercontent.com/70659177/207878474-9461497e-d0de-4751-a61d-5472549d9593.png)
+  ![image](https://user-images.githubusercontent.com/70659177/207880138-88395fbe-b04b-4fa1-8015-59352acb3c57.png)
+  ![image](https://user-images.githubusercontent.com/70659177/207880410-3a019bf7-0bef-45da-a65e-64329138a8e0.png)
+  ![image](https://user-images.githubusercontent.com/70659177/207880646-30e46202-3123-4a54-8109-bf82d1ae0f4e.png)
+  ![image](https://user-images.githubusercontent.com/70659177/207880882-8af36332-cab5-4655-b522-fe7d8a467bbd.png)
+  ![image](https://user-images.githubusercontent.com/70659177/207880924-d4e35c93-7fbc-4e88-878c-a7700808eaa1.png)
+
 
 
   ### Agenda voor meeting

@@ -242,6 +242,7 @@ span.lijn {
         width: 100%;
         background-color: transparent;
         align-items: center;
+        max-width: 850px;
     }
     
     button.hamburgerbutton {

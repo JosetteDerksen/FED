@@ -1,34 +1,551 @@
-/**************/
 /* CSS REMEDY */
-/**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+    box-sizing:border-box;  
+    font-family: 'SF Pro';
 }
 
 button, summary {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 
 
+/* Fonts */
+@font-face {
+    font-family: 'SF-Pro Display Regular';
+    src: url(../fonts/SF-Pro-Display-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url(../fonts/SF-Pro.ttf) format('truetype');
+}  
 
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
+  
+
+/* Custom properties */
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+    /* Header */
+    --header-color1: rgba(0, 0, 0, 0.85);
+    --header-color2: #6e6e73;
+
+    /* Nav */
+    --p-nav-color: #CCCCCC;
+
+    /* Hamburgermenu */
+    --burger-button-color: #6e6e73;
+    --searchbar-color: #1D1D1F; 
+    --burger-lines-color: #424245;
+    --burgerground-color: black; 
+
+    /* Zoekbalk */
+    --label-color: #1F74C5;
+
+    /* Main */
+    --p-color:black;
+    --p-color2: white;
+    --background-color1:white;
+    --background-color2: black;   
+}
+
+/* Body */
+body{ 
+    margin: 0;
+}
+
+h2 {
+    font-family: 'SF-Pro Display Regular';
+}
+
+
+
+/* Nav (altijd aanwezig) */
+header {
+    padding: 1em;
+    height: 3em;
+    background-color: var(--header-color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+header a {
+    padding: 0.5em ;
+}
+
+header > h1 {
+    z-index: 100;
+}
+
+img.navimg {
+    width: auto;
+    height: auto;
+}
+
+button.hamburgerbutton{
+    background-color: transparent;
+    border: 0;
+    order: -100;
 }
 
 
 
 
+    /* Hamburgermenu button */
+button > span {
+    display: block;
+    width: 15px;
+    height: 0.11em;
+    margin-bottom: 5px;
+    position: relative;
+    background: var(--burger-button-color);
+    border-radius: 3px;
+    z-index: 100;
+    transition: 0.5s ease;
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
+.hamburgerbutton.clicked .span1 {
+    transform: rotate(45deg);
+    top: 0.55em;
+}
+  
+.hamburgerbutton.clicked .span2 {
+    transform: rotate(-45deg);
+}
 
-/* jouw code */
 
+
+/* Hamburgermenu */
+header nav{
+    display: grid;
+    align-content: start;
+    gap: 1em;
+    background-color: var(--burgerground-color);
+    position: fixed;
+    inset: 0;
+    transform: translateY(-100%);
+    transition: .5s;
+    padding: 0.5em;
+    z-index: 50;
+}
+
+    /* Navigatie openen */
+header nav.open {
+    transform: translateY(0%);
+}
+
+header nav ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    padding: 0 30px 0 25px;
+    font-size: 17px;
+}
+
+ header nav li {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 0.1em var(--searchbar-color);;
+}
+
+a.navLink {
+    text-decoration: none;
+    color: var(--p-nav-color);
+    height: 2.5em;
+}
+
+    /* Zoekbalk */
+.zoekform {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    background-color: var(--searchbar-color);
+    border-radius: 0.5em;
+    margin-top: 2.5em;
+}
+      
+.zoekform input[type="text"] {
+    display: block;
+    padding: 0.5em;
+    border: none;
+    font-size: 17px;
+    background-color: var(--searchbar-color);
+    border-radius: 0.5em;
+    color: var(--burger-button-color);
+    background-image: url(../images/mobile_homepage/zoekicoon.svg);
+    background-repeat: no-repeat;
+    background-position-x: 0.5em;
+    background-position-y: center ;
+    padding-left: 2em;
+    appearance: none;
+    transition: 1s;
+}
+
+input:focus {
+    padding: .8em .5em .2em;
+    transition: 1s;
+}
+
+label {
+    position: absolute;
+    height: 1.5em;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    display: none;
+    color: var(--label-color);
+
+}
+
+input:focus + label {
+    transform: translateY(-.5em);
+    display: contents;
+}
+      
+.zoekbutton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+img.zoekicoon {
+    height: 1em;
+    visibility: hidden;
+
+}
+
+/* Lijn tussen zoekbalk en categorieën */
+span.lijn {
+    background: var(--searchbar-color);;
+    width: 100%;
+    height: 0.1em;
+    position: block;
+}
+
+@media (min-width:45em) {
+    header nav {
+        position: static;
+        transform: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: transparent;
+        align-items: center;
+    }
+    
+    button.hamburgerbutton {
+        display: none;
+    }
+
+    header > a{
+        order: 100;
+    }
+    
+    header nav ul {
+        flex-direction: row;
+        padding:0;
+        background:none;
+        font-size: 12px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header nav li {
+        border-bottom: none;
+    }
+    
+    header nav a {
+        border:none;
+        z-index: 1;
+    }
+
+    .zoekform{
+        display: none;
+    }
+
+    .zoekform input[type="text"] {
+        display: none;
+    } 
+
+    img.zoekicoon {
+        visibility: visible;
+        order: 2;
+        align-content: center;
+        
+    }
+    
+    span.lijn {
+        display: none;
+    }
+
+    img.navimg {
+        width: 0.9em;
+        align-self: center;
+    }
+}
+
+
+
+/* Main */
+main {
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.125em;
+}
+
+p {
+    font-size: 19px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+}
+
+section.wit {
+    background-color: var(--background-color1);
+}
+
+a.wit {
+    text-decoration: none;
+    color: var(--p-color);
+}
+
+section.zwart {
+    background-color: var(--background-color2);
+}
+
+a.zwart {
+    text-decoration: none;
+    color: var(--p-color2);
+}
+
+/*  */
+section.wit, section.zwart, .animatie, section.witm2, section.zwartm2 {
+    position: relative;
+    overflow: hidden;
+    min-height: 30em;
+}
+  
+section.wit h2, section.zwart h2, .animatie h2, section.witm2 h2, section.zwartm2 h2 {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    right: 1em;
+    z-index: 49;
+}
+  
+section.wit p, section.zwart p, .animatie p{
+    position: absolute;
+    top: 4.1em;
+    left: 1em;
+    right: 1em;
+    z-index: 49;
+}
+
+p.metm2 {
+    position: absolute;
+    top: 4.1em;
+    left: -1em;
+    right: 1em;
+    z-index: 49;
+}
+
+.link, .link2 {
+    position: absolute;
+    top: 8em;
+    left: 1em;
+    right: 1em;
+    margin-right: 1em;
+}
+
+.link {
+    left: -2em;
+}
+
+.link2 {
+    left: 10em;
+}
+
+section.wit img, section.zwart img, img.macbookair {
+    left: 50%; 
+    transform: translateX(-25%);
+    width: 200%;
+    height: 100%;
+}
+
+main section:nth-of-type(1)  {
+    padding-top: 0;
+}
+  
+.watchlogo {
+    transform: translateX(225%);
+    width: 15%;
+}
+
+.watchtekst {
+    padding-top: 1em;
+}
+
+.link1 {
+    position: absolute;
+    top: 9.5em;
+    left: 1em;
+    right: 1em;
+}
+
+section.witm2 {
+    background-color: var(--background-color1);
+
+}
+
+img.m2 {
+    position: absolute;
+    z-index: 30;
+    width: 2.5em;
+    left: 74%;
+    top: 5.5em;
+}
+
+
+/* Carousel */
+
+.carousel ul {
+    display: flex;
+}
+
+.carousel li {
+    position: relative;
+    overflow: hidden;
+    min-height: 60em;
+}
+
+.carousel h3 {
+    position: absolute;
+    top: 5em;
+    left: 1em;
+    right: 1em;
+    /* z-index: 49; */
+    color: var(--p-color2);
+}
+
+.titel {
+    position: absolute;
+    width: 25%;
+    top: 1.5em;
+    transform: translateX(150%);
+}
+
+.titel2 {
+    position: absolute;
+    width: 80%;
+    top: 5em;
+    transform: translateX(12.5%);
+}
+
+.carousel p {
+    position: absolute;
+    top: 30em;
+    left: 1em;
+    right: 1em;
+    z-index: 49;
+    font-size: 15px;
+    color: var(--p-color2);
+}
+
+p.streambutton {
+    position: absolute;
+    top: 35em;
+    color: var(--p-color);
+    background-color: var(--p-color2);
+    height: 3em;
+    width: 10em;
+    align-self: center;
+    align-content: center;
+    border-radius: 2em;
+    font-weight: bold;
+    left: 50%;
+}
+
+.carousel a {
+    position: absolute;
+    top: 8.5em;
+    left: 1em;
+    right: 1em;
+}
+
+
+@media (min-width:45em) {
+    main {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap:1em;
+    }
+
+    main section:nth-of-type(1), section:nth-of-type(2), section:nth-of-type(3)  {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    main section:nth-of-type(1)  {
+        margin-top: 2.5em;
+    }
+
+    section.wit, section.zwart {
+        min-height: 30em;
+    }
+
+    section.wit img, section.zwart img {
+        transform: translatex(0%);
+        width: 60%;
+    }
+
+    section.wit h2, section.zwart h2, .animatie h2 {
+        top: 0;
+        font-size: 48px ;
+    }
+
+    section.wit p, section.zwart p, .animatie p {
+        font-size: 24px;
+        position: absolute;
+        top: 3.3em;
+    }
+    
+    .link, .link2 {
+        font-size: 19px;
+        position: absolute;
+        top: 7.7em;
+        left: 1em;
+        right: 1em;
+    }
+
+    .carousel {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .carousel li {
+        min-height: 40em;
+        min-width: 10em;
+    }
+
+
+  }

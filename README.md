@@ -200,10 +200,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Javascript moet in de html helemaal onderaan.
+  - Je kan meerdere navs hebben op 1 pagina (ook footer).
+  - Span als streepjes voor het hamburgermenu mag. 
+  - Header: display: flex
+		        justify-content: space-between
+		        align-items: center. 
+  - Tip: HTML character check doen om verschillende karakters te weergeven in de html. Zoals ☺ ♦♣◘○♠♥☻ ect. 
+
 
 </details>
 

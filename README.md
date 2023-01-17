@@ -166,7 +166,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Voortgang 2 (week 3)
+## Voortgang 2 (week 7)
 
 <details>
   <summary>uitwerken voor 2e voortgang</summary>
@@ -215,7 +215,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Toegankelijkheidstest 2/2 (week 4)
+## Toegankelijkheidstest 2/2 (week 8)
 
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
@@ -252,7 +252,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Voortgang 3 (week 4)
+## Voortgang 3 (week 7)
 
 <details>
   <summary>uitwerken voor 3e voortgang</summary>
@@ -264,11 +264,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Josette      | Tim          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Hoe krijg ik de linkjes “meer informatie” en “koop” naast elkaar?  | Hoe kan ik een video (iframe) responsive maken, maar wel een 16:9 ratio behouden?            |     | Mijn footer is niet meer te zien.    |
+  | Waarom komt mijn menu niet over de breedte als ik het scherm groot maak? | Uitleggen hoe radio button in eigen stijl te werk gaat. | nog een punt | dit wil ik zeker |
+  | Carousel / slideshow….           | Hoe tekst veranderen wanneer je met je muis (hover) over een radio button heen gaat?               | ...          | ...              |
+  | Mijn footer is niet meer te zien           | Kun je de volgorde wijzigen (order) zonder gebruikt te maken van een flex of grid?                | ... 
+  | Mag ik de grote animatie vervangen voor wat er nu op de website staat?          | ...                | ...         
 
 
   ### Verslag van meeting

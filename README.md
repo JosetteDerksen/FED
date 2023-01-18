@@ -187,7 +187,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Randy      | Josette          | student 3    | student 4        |
+  | Randy      | Josette          | student 3    | student 4        | R
   | ---            | ---                | ---          | ---              |
   | Hoe kun je het verticaal positioneren van een list-style-image het besten aanpakken?  | Waarom werkt mijn hamburgermenu niet?           | en ik dit    | en dan ik dat    |
   | Hoe verberg je zelfgemaakte semantische kopjes? | Hoe komt het dat alles in mijn header te hoog staat terwijl ik het heb gecentreerd? | nog een punt | dit wil ik zeker |
@@ -259,6 +259,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+	![image](https://user-images.githubusercontent.com/70659177/212966455-3f3771ae-7c91-4346-b32f-6cb1a9088246.png)
+	![image](https://user-images.githubusercontent.com/70659177/212966596-420febbf-5e69-4043-b323-67d21d685e63.png)
+Heb van de 
+	![image](https://user-images.githubusercontent.com/70659177/212967375-f2a8b11b-f963-45ca-b4ee-1d49ed62a8cc.png)
+
+
 
 
   ### Agenda voor meeting

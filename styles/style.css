@@ -77,15 +77,12 @@ body{
     color: var(--text-color);
 }
 
-h2 {
-    font-family: 'SF-Pro Display Regular';
-}
-
 main {
     text-align: center;
 }
 
 h2 {
+    font-family: 'SF-Pro Display Regular';
     font-size: 2em;
     font-weight: 600;
     line-height: 1.125em;
@@ -158,15 +155,18 @@ header {
 
 header a {
     padding: 0.5em ;
+    height: 100%;
 }
 
 header > h1 {
     z-index: 100;
+    margin: 0;
 }
 
 img.navimg {
     width: auto;
-    height: auto;
+    /* height: auto; */
+    align-content: center;
 }
 
 button.hamburgerbutton{

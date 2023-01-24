@@ -21,13 +21,22 @@ button, summary {
     src: url(../fonts/SF-Pro.ttf) format('truetype');
 }  
 
+@font-face {
+    font-family: 'SF Pro Text' ;
+    src: url(../fonts/SF-Pro-Text-Light.otf) format('opentype');
+}
+
 
   
 
 /* Custom properties */
 :root {
+
+    /* Body */
+    --text-color: #1d1d1f;
+
     /* Header */
-    --header-color1: rgba(0, 0, 0, 0.85);
+    --header-color1: rgba(0,0,0,0.8);
     --header-color2: #6e6e73;
 
     /* Nav */
@@ -47,15 +56,86 @@ button, summary {
     --p-color2: white;
     --background-color1:white;
     --background-color2: black;   
+
+    /* Footer */
+    --p-footer: #6e6e73;
+    --background-footer: #F5F5F7;
+    --border-footer: #D2D2D7;
+
+    /* linkjes */
+    --a-color: #06c;
+    --a-visited: #551A8B;
 }
 
 /* Body */
 body{ 
     margin: 0;
+    line-height: 1.47059;
+    letter-spacing: -0.022em;
+    color: var(--text-color);
 }
 
 h2 {
     font-family: 'SF-Pro Display Regular';
+}
+
+main {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.125em;
+}
+
+main p {
+    font-size: 1.125em;
+    font-family: 'SF Pro Text';
+}
+
+main a {
+    text-decoration: none;
+    color: var(--a-color)
+}
+
+/* States main Linkjes */
+main a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.3em;
+    text-decoration-color: var(--a-color);
+}
+
+main a:focus{
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.3em;
+    text-decoration-color: var(--a-color);
+    font-weight: bold;
+    outline-color: .1em var(--form-border-active);
+}
+
+main a:active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.3em;
+    text-decoration-color: var(--text-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+main a:visited {
+    /* color: var(--a-visited);
+    text-decoration-color: var(--a-visited); */
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.3em;
+}
+
+
+
+img {
+    height: auto;
 }
 
 
@@ -71,6 +151,7 @@ header {
     position:fixed;
     z-index: 100;
     width: 100%;
+    
 }
 
 header a {
@@ -90,6 +171,29 @@ button.hamburgerbutton{
     background-color: transparent;
     border: 0;
     order: -100;
+}
+
+
+    /* States open nav Linkjes */
+header nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.09em;
+    text-underline-offset: 0.3em;
+    text-decoration-color: var(--p-color2);
+    color: var(--p-color2);
+}
+
+header nav a:focus{
+    text-decoration: underline;
+    text-decoration-color: var(--p-color2);
+    text-decoration-thickness: 0.09em;
+    text-underline-offset: 0.3em;
+    font-weight: bold;
+}
+
+header nav a:active {
+    text-decoration: none;
+    color: var(--p-color2);
 }
 
 
@@ -117,6 +221,18 @@ button > span {
     transform: rotate(-45deg);
 }
 
+    /* States open nav Linkjes */
+.hamburgerbutton:hover {
+    background: 10px white;
+    height: ;
+}
+
+/* .hamburgerbutton:hover:focus{
+}
+
+.hamburgerbutton:hover:active {
+} */
+
 
 
 /* Hamburgermenu */
@@ -133,6 +249,7 @@ header nav{
     z-index: 50;
 }
 
+
     /* Navigatie openen */
 header nav.open {
     transform: translateY(0%);
@@ -148,11 +265,11 @@ header nav ul {
     font-size: 17px;
 }
 
- header nav li {
+header nav li {
     border: none;
     display: flex;
     flex-direction: row;
-    border-bottom: solid 0.1em var(--searchbar-color);;
+    border-bottom: solid 0.1em var(--searchbar-color);
 }
 
 a.navLink {
@@ -160,6 +277,7 @@ a.navLink {
     color: var(--p-nav-color);
     height: 2.5em;
 }
+
 
     /* Zoekbalk */
 .zoekform {
@@ -193,7 +311,7 @@ input:focus {
     transition: 1s;
 }
 
-label {
+.zoekform label {
     position: absolute;
     height: 1.5em;
     width: 100%;
@@ -208,22 +326,17 @@ label {
 
 }
 
-input:focus + label {
+.zoekform input:focus + label {
     transform: translateY(-.5em);
     display: contents;
-}
-      
-.zoekbutton {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
 }
 
 img.zoekicoon {
     height: 1em;
-    visibility: hidden;
-
+    display: none;
 }
+
+
 
 /* Lijn tussen zoekbalk en categorieën */
 span.lijn {
@@ -233,12 +346,20 @@ span.lijn {
     position: block;
 }
 
-@media (min-width:45em) {
+    /* Min width: 45em */
+@media (min-width:51em) {
+
+    header {
+        backdrop-filter: saturate(180%) blur(20px);
+        display: flex;
+        justify-content: center;
+    }
+    
     header nav {
         position: static;
         transform: none;
-        display: flex;
-        justify-content: space-between;
+        /* display: flex; */
+        /* justify-content: space-between; */
         width: 100%;
         background-color: transparent;
         align-items: center;
@@ -280,9 +401,10 @@ span.lijn {
     } 
 
     img.zoekicoon {
-        visibility: visible;
+        display: block;
         order: 2;
         align-content: center;
+        padding: 0 1em;
         
     }
     
@@ -291,262 +413,207 @@ span.lijn {
     }
 
     img.navimg {
-        width: 0.9em;
+        width: 0.8em;
         align-self: center;
     }
 }
 
 
-
-/* Main */
-main {
-    text-align: center;
-}
-
-h2 {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 1.125em;
-}
-
-p {
-    font-size: 19px;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    height: auto;
-}
-
-section.wit {
-    background-color: var(--background-color1);
-}
-
-a.wit {
-    text-decoration: none;
-    color: var(--p-color);
-}
-
-section.zwart {
-    background-color: var(--background-color2);
-}
-
-a.zwart {
-    text-decoration: none;
-    color: var(--p-color2);
-}
-
-/*  */
-section.wit, section.zwart, .animatie, section.witm2, section.zwartm2 {
-    position: relative;
-    overflow: hidden;
-    min-height: 30em;
-}
   
-section.wit h2, section.zwart h2, .animatie h2, section.witm2 h2, section.zwartm2 h2 {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    right: 1em;
-    z-index: 49;
-}
-  
-section.wit p, section.zwart p, .animatie p{
-    position: absolute;
-    top: 4.1em;
-    left: 1em;
-    right: 1em;
-    z-index: 49;
-}
-
-p.metm2 {
-    position: absolute;
-    top: 4.1em;
-    left: -1em;
-    right: 1em;
-    z-index: 49;
-}
-
-.link, .link2 {
-    position: absolute;
-    top: 8em;
-    left: 1em;
-    right: 1em;
-    margin-right: 1em;
-}
-
-.link {
-    left: -2em;
-}
-
-.link2 {
-    left: 10em;
-}
-
-section.wit img, section.zwart img, img.macbookair {
-    left: 50%; 
-    transform: translateX(-25%);
-    width: 200%;
-    height: 100%;
-}
-
-main section:nth-of-type(1)  {
-    padding-top: 0;
-}
-  
-.watchlogo {
-    transform: translateX(225%);
-    width: 15%;
-}
-
-.watchtekst {
-    padding-top: 1em;
-}
-
-.link1 {
-    position: absolute;
-    top: 9.5em;
-    left: 1em;
-    right: 1em;
-}
-
-section.witm2 {
-    background-color: var(--background-color1);
-
-}
-
-img.m2 {
-    position: absolute;
-    z-index: 30;
-    width: 2.5em;
-    left: 74%;
-    top: 5.5em;
-}
-
-
-/* Carousel */
-
-.carousel ul {
-    display: flex;
-}
-
-.carousel li {
-    position: relative;
-    overflow: hidden;
-    min-height: 60em;
-}
-
-.carousel h3 {
-    position: absolute;
-    top: 5em;
-    left: 1em;
-    right: 1em;
-    /* z-index: 49; */
-    color: var(--p-color2);
-}
-
-.titel {
-    position: absolute;
-    width: 25%;
-    top: 1.5em;
-    transform: translateX(150%);
-}
-
-.titel2 {
-    position: absolute;
-    width: 80%;
-    top: 5em;
-    transform: translateX(12.5%);
-}
-
-.carousel p {
-    position: absolute;
-    top: 30em;
-    left: 1em;
-    right: 1em;
-    z-index: 49;
-    font-size: 15px;
-    color: var(--p-color2);
-}
-
-p.streambutton {
-    position: absolute;
-    top: 35em;
-    color: var(--p-color);
-    background-color: var(--p-color2);
-    height: 3em;
-    width: 10em;
-    align-self: center;
-    align-content: center;
-    border-radius: 2em;
-    font-weight: bold;
-    left: 50%;
-}
-
-.carousel a {
-    position: absolute;
-    top: 8.5em;
-    left: 1em;
-    right: 1em;
-}
-
-
-@media (min-width:45em) {
-    main {
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        gap:1em;
-    }
-
-    main section:nth-of-type(1), section:nth-of-type(2), section:nth-of-type(3)  {
-        grid-column-start: 1;
-        grid-column-end: -1;
-    }
-
-    main section:nth-of-type(1)  {
-        margin-top: 2.5em;
-    }
-
-    section.wit, section.zwart {
-        min-height: 30em;
-    }
-
-    section.wit img, section.zwart img {
-        transform: translatex(0%);
-        width: 60%;
-    }
-
-    section.wit h2, section.zwart h2, .animatie h2 {
-        top: 0;
-        font-size: 48px ;
-    }
-
-    section.wit p, section.zwart p, .animatie p {
-        font-size: 24px;
-        position: absolute;
-        top: 3.3em;
-    }
+/* Footer */
+footer {
+    padding: 0.5em 0;
+    background-color: var(--background-footer);
+    font-size: 0.75em;
+    z-index: 1;
     
-    .link, .link2 {
-        font-size: 19px;
-        position: absolute;
-        top: 7.7em;
-        left: 1em;
-        right: 1em;
+}
+
+/* footer nav {
+    /* display: flex; */
+    /* flex-direction: column;
+} */
+
+footer section ul {
+    display: none;
+    list-style: none;
+    padding-bottom: 1em;
+}
+
+footer section ul.open {
+    display: block;
+}
+
+footer section ul li a{
+    color: var(--p-footer);
+}
+
+footer section li {
+    margin-bottom: 0.8em;
+}
+
+footer section {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    color: var(--p-footer);
+}
+
+footer h4 {
+    font-family: 'SF Pro Text';
+    font-weight: 100;  
+    border-bottom: solid 0.1em var(--border-footer);
+    padding: 0.5em 1em;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    padding: .2em 1em;
+    color: var(--p-footer);
+    font-family: 'SF Pro Text';
+    /* font-size: 0.9em; */
+}
+
+footer > a, 
+footer > ul:last-of-type {
+    padding-left: 1em;
+    color: var(--p-footer);
+}
+
+footer > ul:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+footer > ul:last-of-type a {
+    color: var(--p-footer);
+    border-right: 0.0625em solid var(--border-footer);
+    margin-right: 0.4375em;
+    padding-right: 0.625em;
+    margin-top:  0.3125em;
+}
+
+footer section h4::after{
+    content: '+';
+    color: var(--p-color);
+    position: relative;
+    transition: .405s;
+    font-size: 1.5em;
+}
+
+footer section h4.open::after{
+    rotate: 405deg;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p a {
+    color: var(--a-color);
+}
+
+    /* States Footer Linkjes */
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.1em;
+    text-decoration-color: var(--p-footer);
+}
+
+footer a:focus{
+    text-decoration: underline;
+    text-decoration-color: var(--p-footer);
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.1em;
+    font-weight: bold;
+    outline-color: .1em var(--form-border-active);
+}
+
+footer a:active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.3em;
+    text-decoration-color: var(--a-color);
+    color: var(--a-color);
+}
+
+footer a:visited {
+    /* color: var(--a-visited);
+    text-decoration-color: var(--a-visited); */
+}
+
+
+
+    /* Footer min-width 45em */
+@media (min-width:45em) {
+
+    footer {
+        padding: 0 5em;
     }
 
-    .carousel {
-        grid-column-start: 1;
-        grid-column-end: -1;
+    footer section ul {
+        display: block;
+        list-style: none;
+        padding-left: 0;
+        padding-bottom: 1em;
     }
 
-    .carousel li {
-        min-height: 40em;
-        min-width: 10em;
+    footer section li a {
+        color: var(--p-footer);
     }
 
+    footer button {
+        display: none;
+    }
 
-  }
+    footer section {
+        display: block;
+        padding-right: 2.5em;
+        border-bottom: none;
+        width: 13em;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 2em;
+    }
+
+    footer span {
+        display: block;
+        height: 0.0625em;
+        width: 95%;
+        align-self:  center;
+        background-color: var(--border-footer);
+        margin-bottom: 0.5em;
+    }
+
+    footer section li {
+        margin-bottom: 0.5em;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    footer h4 {
+        color: var(--p-color);
+        font-weight: bold;
+        border-bottom: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer > a {
+        float: right;
+    }
+
+    footer section h4::after{
+        display: none;
+    }
+}

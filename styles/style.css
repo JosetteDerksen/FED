@@ -65,6 +65,8 @@ button, summary {
     /* linkjes */
     --a-color: #06c;
     --a-visited: #551A8B;
+
+    --form-border-active: rgba(0, 125, 250, 0.6);
 }
 
 /* Body */
@@ -224,7 +226,6 @@ button > span {
     /* States open nav Linkjes */
 .hamburgerbutton:hover {
     background: 10px white;
-    height: ;
 }
 
 /* .hamburgerbutton:hover:focus{
@@ -541,10 +542,10 @@ footer a:active {
     color: var(--a-color);
 }
 
-footer a:visited {
-    /* color: var(--a-visited);
-    text-decoration-color: var(--a-visited); */
-}
+/* footer a:visited {
+    color: var(--a-visited);
+    text-decoration-color: var(--a-visited);
+} */
 
 
 

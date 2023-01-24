@@ -514,16 +514,11 @@ main section:nth-of-type(4) div a p:focus {
 main section:nth-of-type(4) div a:active {
     text-decoration: none;
     background-color: var(--button-active);
-    font-weight: bold;
 }
 
 main section:nth-of-type(4) div a p:active {
     color: var(--p-color);
-    font-weight: bold;
 }
-
-
-
 
 
 
@@ -572,6 +567,10 @@ main section:nth-of-type(4) div a p:active {
         grid-template-columns: 80%;
         padding-right: 28%;
     }
+
+    main section:nth-of-type(10) div{
+        padding-top: 0;
+    }
     
     main section:nth-of-type(3) div img,
     main section:nth-of-type(6) div img,
@@ -595,10 +594,11 @@ main section:nth-of-type(4) div a p:active {
         position: block;
     }
 
-    /* main section:nth-of-type(10) div img {
-        width: 10%;
-        padding-left: 1em;
-    } */
+    main section:nth-of-type(10) div img {
+        width: 20%;
+        padding-left: 0.5em;
+        height: 3.5vh;
+    }
 }
 
 

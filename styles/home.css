@@ -60,6 +60,17 @@ button, summary {
 
     /* linkjes */
     --a-color: #06c;
+
+    /* Button */
+    --carbutton-klein: rgba(0,0,0,0.16);
+    --carbutton-klein-hover: rgba(0,0,0,0.25);
+    --carbutton-klein-active: rgba(0,0,0,0.56);
+    --button-hover: #FFABBB;
+    --button-focus: #FF5B7A;
+    --button-active: #ff123e;
+
+    /* Outline focus state */
+    --form-border-active: rgba(0, 125, 250, 0.6);
 }
 
 
@@ -190,54 +201,39 @@ section.product > a img {
     
 /* Carousel */
 .carousel ul {
+    /* width: 40%;  */
+    position: relative;
+    /* margin-left: 32.5% ; */
     display: flex;
-    height: 35em;
-    width: 100%;
-    justify-content: center;
-    padding: 5%;
     overflow: scroll;
+    /* height: 100%; */
 }
 
 .carousel li{
     position: relative;
-    overflow-y: hidden;
     height: 35em;
+    width: 100%;
+    list-style: none;
 }
 
 
 .carousel li div {
     /* height: 30em; */
     position: absolute;
-    background-size: cover;
-    display: grid;
-    justify-items: center;
-    grid-template-rows:[row1-start] 10%  [row2-start] 4% [row3-start] 48% [row4-start] 22% ;
-    height: 100%;
-    width: 100%;
-}
-  
-.streambutton img {
-    height: 60%;
-    padding-left: .5em;
-}
-
-.streambutton{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: var(--p-color);
-    background-color: var(--p-color2);
-    height: 3em;
-    width: 10em;
-    border-radius: 2em;
-    font-weight: bold;
-    left: 50%;
-    order: 5;
+    /* display: grid;
+    justify-items: center;
+    grid-template-rows:[row1-start] 10%  [row2-start] 4% [row3-start] 48% [row4-start] 22% ; */
+    height: 100%;
+    gap: 1em;
 }
 
-.carousel div img:nth-of-type(1){
+.carousel div > img:nth-of-type(1){
     width: 15%;
     align-self: center;
+    margin-top: 1em;
 }
 
 .carousel div img:nth-of-type(2) {
@@ -254,14 +250,11 @@ section.product > a img {
 
 .carousel li h3 {
     order: 3;
-    align-self: end;
-    margin: 0;
+    margin: 10em 0 0 0;
 }
 
 .carousel li p:nth-child(2) {
-    width: 80%;
-    align-self: start;
-    margin-top: .5em;
+    margin-top: 0;
     order: 4;
 }
 
@@ -271,4 +264,77 @@ section.product > a img {
     height:100%;
     object-fit: cover;
     object-position: center ;
+}
+
+    /* Stream nu button */
+.streambutton{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: var(--p-color);
+    background-color: var(--p-color2);
+    height: 3em;
+    width: 10em;
+    border-radius: 2em;
+    font-weight: bold;
+    left: 50%;
+    order: 5;
+}
+
+.streambutton img {
+    height: 60%;
+    padding-left: .5em;
+    align-self: center;
+}
+
+.streambutton p {
+    align-self: center;
+    padding-right: 0.1em;
+}
+
+        /* States Stream nu button */
+.streambutton:hover {
+    text-decoration: none;
+    background-color: var(--button-hover);
+}
+
+.streambutton:hover {
+    text-decoration: none;
+    background-color: var(--button-hover);
+}
+
+.streambutton:focus{
+    text-decoration: none;
+    background-color: var(--button-focus);
+    outline: none;
+}
+
+.streambutton:active {
+    text-decoration: none;
+    background-color: var(--button-active);
+    font-weight: bold;
+}
+
+
+    /* Ronde navigatie knopjes beneden */
+.carousel > div:last-of-type button {
+    height: 1.68vh;
+    border-radius: 1em;
+    border: none;
+    background-color: var(--carbutton-klein);
+    margin: 0 .3em;
+}
+
+    /* States Ronde navigatie knopjes beneden */
+.carousel > div:last-of-type button:hover {
+    background-color: var(--carbutton-klein-hover);
+}
+
+.carousel > div:last-of-type button:focus {
+    background-color: var(--carbutton-klein-hover);
+    outline-color: .1em var(--form-border-active)
+}
+
+.carousel > div:last-of-type button:active {
+    background-color: var(--carbutton-klein-active);
 }

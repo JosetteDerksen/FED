@@ -10,7 +10,7 @@ button, summary {
 
 
 
-/* Fonts */
+/* FONTS */
 @font-face {
     font-family: 'SF-Pro Display Regular';
     src: url(../fonts/SF-Pro-Display-Regular.otf) format('opentype');
@@ -29,7 +29,7 @@ button, summary {
 
   
 
-/* Custom properties */
+/* CUSTOM PROPERTIES */
 :root {
 
     /* Body */
@@ -69,7 +69,7 @@ button, summary {
     --form-border-active: rgba(0, 125, 250, 0.6);
 }
 
-/* Body */
+/* BODY */
 body{ 
     margin: 0;
     line-height: 1.47059;
@@ -88,6 +88,10 @@ h2 {
     line-height: 1.125em;
 }
 
+img {
+    height: auto;
+}
+
 main p {
     font-size: 1.125em;
     font-family: 'SF Pro Text';
@@ -95,10 +99,10 @@ main p {
 
 main a {
     text-decoration: none;
-    color: var(--a-color)
+    color: var(--a-color);
 }
 
-/* States main Linkjes */
+/* STATES - main Linkjes */
 main a:hover {
     text-decoration: underline;
     text-decoration-thickness: 0.08em;
@@ -125,58 +129,210 @@ main a:active {
 }
 
 main a:visited {
-    /* color: var(--a-visited);
-    text-decoration-color: var(--a-visited); */
     text-decoration-thickness: 0.08em;
     text-underline-offset: 0.3em;
 }
 
 
 
-img {
-    height: auto;
-}
 
 
 
 /* Nav (altijd aanwezig) */
 header {
-    padding: 1em;
+    padding: 0 1em;
     height: 3em;
     background-color: var(--header-color1);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position:fixed;
+    gap:.5em;
+    top:0;
+
     z-index: 100;
     width: 100%;
-    
+
+    transition: .5s;
 }
 
+/* beetje een trucje dat alleen in chrome werkt */
+header:has(nav input:focus) {
+   margin-top:-2em;
+}
+
+
+/* alle links in beide navs */
 header a {
-    padding: 0.5em ;
-    height: 100%;
+    display:block;
+    padding: 0.5rem ;
 }
 
+
+/* apple logo & cart */
 header > h1 {
     z-index: 100;
     margin: 0;
 }
 
-img.navimg {
-    width: auto;
-    /* height: auto; */
-    align-content: center;
+/* img.navimg { */
+header a > img {
+    display:block;
+    width: 1rem;
+    height: auto;
 }
 
-button.hamburgerbutton{
+/* STATES - Apple logo en winkelwagen  */
+    /* Hover */
+@keyframes iconen-draaien {
+    0% {
+        transform:rotate(0);
+    }
+    40% {
+        transform:rotate(72deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+header a > img:hover {
+    animation-name: iconen-draaien;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+}
+
+
+
+/* Hamburgermenu button */
+header > button {
+    position: relative;
+    /* hier ipv op de spans */
+    z-index: 100;
+
+    order: -100;
+
+    width:2em;
+    height:2em;
+
+    display:grid;
+    place-items:center;
+    place-content:center;
+
+    font-size: 1em;
+
     background-color: transparent;
     border: 0;
-    order: -100;
+}
+
+header > button span {
+    position: absolute;
+   
+    display: block;
+    width: 1em;
+    height: 0.11em;
+    
+    background: var(--burger-button-color);
+    border-radius: 3px;
+   
+    transition: 0.5s ease;
+}
+
+header > button span:nth-of-type(1) {
+    transform: translateY(-.225em);
+}
+header > button span:nth-of-type(2) {
+    transform: translateY(.225em);
+}
+
+header > button.clicked span:nth-of-type(1) {
+    transform: rotate(45deg);
+}
+header > button.clicked span:nth-of-type(2) {
+    transform: rotate(-45deg);
+}
+
+/* STATES - hamburger button */
+    /* Hover */
+@keyframes burger-draaien {
+    0% {
+        transform:rotate(0);
+    }
+    40% {
+        transform:rotate(72deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+header > button:hover {
+    animation-name: burger-draaien;
+    animation-duration: .5s;
+    animation-timing-function: linear;
 }
 
 
-    /* States open nav Linkjes */
+/* Hamburgermenu */
+header nav{
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+
+    padding: 0.5em;
+
+    display: grid;
+    align-content: start;
+    gap: 1em;
+    background-color: var(--burgerground-color);
+    
+    transform: translateY(-100%);
+    transition: .5s;
+}
+
+
+ /* Navigatie openen */
+header nav.open {
+    transform: translateY(0%);
+}
+
+/* beetje een trucje dat alleen in chrome werkt */
+header nav:has(input:focus) {
+    margin-top:-2em;
+}
+
+header nav ul {
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+
+    padding: 0 2em 0 1.5em;
+    font-size: 1em;
+
+    transition:.5s;
+}
+
+/* beetje een trucje dat alleen in chrome werkt */
+header nav:has(input:focus) ul {
+    opacity:0;
+}
+
+header nav li {
+    border-bottom: solid 0.1em var(--searchbar-color);
+}
+
+/* a.navLink { */
+header nav a {
+    text-decoration: none;
+    color: var(--p-nav-color);
+    height: 2.5em;
+}
+
+/* STATES open nav Linkjes */
+    /* Hover */
 header nav a:hover {
     text-decoration: underline;
     text-decoration-thickness: 0.09em;
@@ -184,7 +340,7 @@ header nav a:hover {
     text-decoration-color: var(--p-color2);
     color: var(--p-color2);
 }
-
+    /* Focus */
 header nav a:focus{
     text-decoration: underline;
     text-decoration-color: var(--p-color2);
@@ -192,7 +348,7 @@ header nav a:focus{
     text-underline-offset: 0.3em;
     font-weight: bold;
 }
-
+    /* Active */
 header nav a:active {
     text-decoration: none;
     color: var(--p-color2);
@@ -201,177 +357,92 @@ header nav a:active {
 
 
 
-    /* Hamburgermenu button */
-button > span {
-    display: block;
-    width: 15px;
-    height: 0.11em;
-    margin-bottom: 5px;
-    position: relative;
-    background: var(--burger-button-color);
-    border-radius: 3px;
-    z-index: 100;
-    transition: 0.5s ease;
-}
 
-.hamburgerbutton.clicked .span1 {
-    transform: rotate(45deg);
-    top: 0.55em;
-}
-  
-.hamburgerbutton.clicked .span2 {
-    transform: rotate(-45deg);
-}
-
-    /* States open nav Linkjes */
-.hamburgerbutton:hover {
-    background: 10px white;
-}
-
-/* .hamburgerbutton:hover:focus{
-}
-
-.hamburgerbutton:hover:active {
-} */
-
-
-
-/* Hamburgermenu */
-header nav{
-    display: grid;
-    align-content: start;
-    gap: 1em;
-    background-color: var(--burgerground-color);
-    position: fixed;
-    inset: 0;
-    transform: translateY(-100%);
-    transition: .5s;
-    padding: 0.5em;
-    z-index: 50;
-}
-
-
-    /* Navigatie openen */
-header nav.open {
-    transform: translateY(0%);
-}
-
-header nav ul {
-    margin: 0;
-    list-style: none;
+/* Zoekbalk */
+header nav form {
     display: flex;
-    flex-direction: column;
-    gap: 0.1em;
-    padding: 0 30px 0 25px;
-    font-size: 17px;
-}
-
-header nav li {
-    border: none;
-    display: flex;
-    flex-direction: row;
-    border-bottom: solid 0.1em var(--searchbar-color);
-}
-
-a.navLink {
-    text-decoration: none;
-    color: var(--p-nav-color);
-    height: 2.5em;
-}
-
-
-    /* Zoekbalk */
-.zoekform {
-    display: flex;
-    align-items: center;
-    font-size: 1em;
-    background-color: var(--searchbar-color);
-    border-radius: 0.5em;
+    gap:.5em;
     margin-top: 2.5em;
+
+    padding-bottom:1em;
+    border-bottom:solid 0.1em var(--searchbar-color);
 }
-      
-.zoekform input[type="text"] {
+
+/* label voor zoekveld */
+header nav form label {
+    position: absolute;
+    left:-9999em;
+}
+
+header nav form input[type="search"] {
     display: block;
     padding: 0.5em;
-    border: none;
-    font-size: 17px;
+    padding-left: 2em;
+    flex-grow:1;
+    
+    font-size: 1em;
+
+    appearance: none;
     background-color: var(--searchbar-color);
-    border-radius: 0.5em;
-    color: var(--burger-button-color);
     background-image: url(../images/mobile_homepage/zoekicoon.svg);
     background-repeat: no-repeat;
     background-position-x: 0.5em;
-    background-position-y: center ;
-    padding-left: 2em;
+    background-position-y: center;
+    border: none;
+    border-radius: 0.5em;
+
+    color: var(--burger-button-color);
+
+}
+
+
+/* annuleer button */
+header nav form input + button {
+    display:none;
+    font-size: 1em;
+
     appearance: none;
-    transition: 1s;
+    background: none;
+    border:none;
+
+    color:var(--a-color);
 }
 
-input:focus {
-    padding: .8em .5em .2em;
-    transition: 1s;
+header nav form input:focus + button {
+    display:block;
 }
 
-.zoekform label {
-    position: absolute;
-    height: 1.5em;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: .5em;
-    display: flex;
-    align-items: center;
-    transition: 1s;
-    display: none;
-    color: var(--label-color);
-
-}
-
-.zoekform input:focus + label {
-    transform: translateY(-.5em);
-    display: contents;
-}
-
-img.zoekicoon {
+/* zoek button op groot scherm */
+header > img {
     height: 1em;
     display: none;
 }
 
 
-
-/* Lijn tussen zoekbalk en categorieën */
-span.lijn {
-    background: var(--searchbar-color);;
-    width: 100%;
-    height: 0.1em;
-    position: block;
-}
-
-    /* Min width: 45em */
+/* Min width: 45em */
 @media (min-width:51em) {
 
     header {
-        backdrop-filter: saturate(180%) blur(20px);
-        display: flex;
+        backdrop-filter: saturate(180%) blur(20px); /* cool :-) */
         justify-content: center;
     }
     
     header nav {
         position: static;
         transform: none;
-        /* display: flex; */
-        /* justify-content: space-between; */
         width: 100%;
-        background-color: transparent;
-        align-items: center;
         max-width: 850px;
+
+        background-color: transparent;
     }
     
-    button.hamburgerbutton {
+    /* hamburgerbutton */
+    header > button {
         display: none;
     }
 
-    header > a{
+    /* winkelwagen */
+    header > a {
         order: 100;
     }
     
@@ -387,53 +458,38 @@ span.lijn {
     header nav li {
         border-bottom: none;
     }
-    
-    header nav a {
-        border:none;
-        z-index: 1;
-    }
 
-    .zoekform{
+    header nav form {
         display: none;
     }
 
-    .zoekform input[type="text"] {
-        display: none;
-    } 
-
-    img.zoekicoon {
+    /* zoekicoon */
+    header > img {
         display: block;
-        order: 2;
-        align-content: center;
-        padding: 0 1em;
-        
-    }
-    
-    span.lijn {
-        display: none;
-    }
 
-    img.navimg {
-        width: 0.8em;
-        align-self: center;
+        width:1em;
+        height:auto;
+        margin:.5em;
+
+        order: 50;
     }
 }
 
 
   
-/* Footer */
+/* FOOTER */
 footer {
     padding: 0.5em 0;
     background-color: var(--background-footer);
     font-size: 0.75em;
     z-index: 1;
-    
 }
 
-/* footer nav {
-    /* display: flex; */
-    /* flex-direction: column;
-} */
+footer section {
+    justify-content: space-between;
+    align-items: center;
+    color: var(--p-footer);
+}
 
 footer section ul {
     display: none;
@@ -453,13 +509,6 @@ footer section li {
     margin-bottom: 0.8em;
 }
 
-footer section {
-    /* display: flex; */
-    justify-content: space-between;
-    align-items: center;
-    color: var(--p-footer);
-}
-
 footer h4 {
     font-family: 'SF Pro Text';
     font-weight: 100;  
@@ -470,11 +519,22 @@ footer h4 {
     justify-content: space-between;
 }
 
+footer section h4::after{
+    content: '+';
+    color: var(--p-color);
+    position: relative;
+    transition: .405s;
+    font-size: 1.5em;
+}
+
+footer section h4.open::after{
+    rotate: 405deg;
+}
+
 footer p {
     padding: .2em 1em;
     color: var(--p-footer);
     font-family: 'SF Pro Text';
-    /* font-size: 0.9em; */
 }
 
 footer > a, 
@@ -497,18 +557,6 @@ footer > ul:last-of-type a {
     margin-top:  0.3125em;
 }
 
-footer section h4::after{
-    content: '+';
-    color: var(--p-color);
-    position: relative;
-    transition: .405s;
-    font-size: 1.5em;
-}
-
-footer section h4.open::after{
-    rotate: 405deg;
-}
-
 footer a {
     text-decoration: none;
 }
@@ -517,14 +565,15 @@ footer p a {
     color: var(--a-color);
 }
 
-    /* States Footer Linkjes */
+/* STATES - Footer Linkjes */
+    /* Hover */
 footer a:hover {
     text-decoration: underline;
     text-decoration-thickness: 0.08em;
     text-underline-offset: 0.1em;
     text-decoration-color: var(--p-footer);
 }
-
+    /* Focus */
 footer a:focus{
     text-decoration: underline;
     text-decoration-color: var(--p-footer);
@@ -533,7 +582,7 @@ footer a:focus{
     font-weight: bold;
     outline-color: .1em var(--form-border-active);
 }
-
+    /* Active */
 footer a:active {
     text-decoration: underline;
     text-decoration-thickness: 0.08em;
@@ -542,14 +591,8 @@ footer a:active {
     color: var(--a-color);
 }
 
-/* footer a:visited {
-    color: var(--a-visited);
-    text-decoration-color: var(--a-visited);
-} */
 
-
-
-    /* Footer min-width 45em */
+/* MIN-WITH 45EM - Footer */
 @media (min-width:45em) {
 
     footer {

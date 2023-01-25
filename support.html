@@ -16,40 +16,39 @@
 
     <header> 
         <!-- Navigatie (die altijd blijft staan) -->
-        <h1><a href="" aria-label="Homepagina Apple"><img class="navimg1" src="./images/mobile_homepage/icoon_applelogo.svg" alt=""></a></h1>
+        <h1><a href="index.html" aria-label="Homepagina Apple"><img src="./images/mobile_homepage/icoon_applelogo.svg" alt=""></a></h1>
         
-        <button class="hamburgerbutton" aria-label="Hamburgermenu">
-            <span class="span1"></span>
-            <span class="span2"></span>
-        </button>
+        <button aria-label="Hamburgermenu">
+			<span></span>
+			<span></span>
+		</button>
         
-        <img class="zoekicoon" src="./images/mobile_homepage/zoekicoon.svg" alt="Zoeken op Apple.com">
+        <img src="./images/mobile_homepage/zoekicoon.svg" alt="Zoeken op Apple.com">
                 
-        <a href="" aria-label="Winkelwagen"><img class="navimg" src="./images/mobile_homepage/icoon_winkelwagen.svg" alt=""></a>
+        <a href="" aria-label="Winkelwagen"><img src="./images/mobile_homepage/icoon_winkelwagen.svg" alt=""></a>
                 
         
         
         
         <!-- Hamburger menu navigatie -->
         <nav>
-            <form class="zoekform" action="/search">	
-                <input id="zoeken" type="text" name="search" placeholder="Zoeken op apple.com">
-                <label for="zoeken">Zoeken</label>
-            </form>	
-        
-            <span class="lijn"></span>
+            <form>	
+				<label for="zoeken">Zoeken</label>
+				<input id="zoeken" type="search" name="search" placeholder="Zoeken op apple.com">
+				<button type="reset">Annuleer</button>
+			</form>	
         
             <ul>
-                <li><a class="navLink" href="">Store</a></li>
-                <li><a class="navLink" href="">Mac</a></li>
-                <li><a class="navLink" href="">iPad</a></li>
-                <li><a class="navLink" href="">iPhone</a></li>
-                <li><a class="navLink" href="">Watch</a></li>
-                <li><a class="navLink" href="">AirPods</a></li>
-                <li><a class="navLink" href="">TV & Woning</a></li>
-                <li><a class="navLink" href="">Alleen bij Apple</a></li>
-                <li><a class="navLink" href="">Accessoires</a></li>
-                <li><a class="navLink" href="./support.html">Support</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="">iPhone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">AirPods</a></li>
+                <li><a href="">TV & Woning</a></li>
+                <li><a href="">Alleen bij Apple</a></li>
+                <li><a href="">Accessoires</a></li>
+                <li><a href="./support.html">Support</a></li>
             </ul>
         </nav>
 
@@ -146,8 +145,7 @@
         <section>
             <h2>Zoek naar meer onderwerpen</h2>
             <form action="/search">	
-                <input id="zoeken" type="text" name="search">
-                <label for="zoeken">Zoek in Support</label>
+                <input id="zoeken" type="text" name="search" placeholder="Zoek in Support">
                 <button>
                     <img src="./images/Support/verwijdertekst.svg" alt="Verwijder zoek tekst">
                 </button>
@@ -266,7 +264,6 @@
 
             <section>
                     <h4>Bestellen en informatie</h4>
-                    <!-- <button type="button">+</button> -->
                     <ul>
                         <li>
                             <a href="">Store</a>
@@ -303,7 +300,6 @@
 
                 <section>
                     <h4>Services</h4>
-                    <!-- <button type="button">+</button> -->
                     <ul>
                         <li>
                             <a href="">Apple Music</a>
@@ -329,7 +325,6 @@
                     </ul>
 
                     <h4>Account</h4>
-                    <!-- <button type="button">+</button> -->
                     <ul>
                         <li>
                             <a href="">Je Apple ID beheren</a>
@@ -345,7 +340,6 @@
 
                 <section>
                     <h4>Apple Store</h4>
-                    <!-- <button type="button">+</button> -->
                     <ul>
                         <li>
                             <a href="">Zoek een store</a>
@@ -379,7 +373,6 @@
 
                 <section>
                     <h4>Voor bedrijven</h4>
-                    <!-- <button type="button">+</button> -->
                     <ul>
                         <li>
                             <a href="">Apple en het bedrijfsleven</a>
@@ -390,7 +383,6 @@
                     </ul>
 
                     <h4>Voor het onderwijs</h4>
-                    <!-- <button type="button">+</button> -->
                     <ul>
                         <li>
                             <a href="">Apple en het onderwijs</a>
@@ -401,7 +393,6 @@
                     </ul>
 
                     <h4>Voor de gezondheidszorg</h4>
-                    <!-- <button type="button">+</button> -->
                     <ul>
                         <li>
                             <a href="">Apple in de gezondheidszorg</a>
@@ -414,7 +405,6 @@
 
                 <section>
                     <h4>Waarden van Apple</h4>
-                    <!-- <button type="button">+</button> -->
                     <ul>
                         <li>
                             <a href="">Toegankelijkheid</a>
@@ -428,7 +418,6 @@
                     </ul>
 
                     <h4>Over Apple</h4>
-                    <!-- <button type="button">+</button> -->
                     <ul>
                         <li>
                             <a href="">Newsroom</a>

@@ -10,7 +10,7 @@ button, summary {
 
 
 
-/* Fonts */
+/* FONTS */
 @font-face {
     font-family: 'SF-Pro Display Regular';
     src: url(../fonts/SF-Pro-Display-Regular.otf) format('opentype');
@@ -28,7 +28,7 @@ button, summary {
 
 
 
-/* Custom properties */
+/* CUSTOM PROPERTIES */
 :root {
     /* Body */
     --text-color: #1d1d1f;
@@ -66,7 +66,7 @@ button, summary {
 
 
 
-/* Main */
+/* MAIN */
 
 /* Algemene styling sections */
 main h3 {
@@ -95,6 +95,7 @@ main ul li a p {
     font-size: 1.0625em;
 }
 
+/* MIN WITH 45EM - Algemene styling */
 @media (min-width:45em) {
     main section div h2 {
         font-size: 2.5em;
@@ -123,7 +124,7 @@ main section:first-of-type h2{
     font-size: 2.5em;
 }
 
-    /* Banner + h2 min 45em */
+/* MIN WITH 45EM - Banner + h2 */
 @media (min-width:45em) {
     main section:first-of-type {
         height: 45em;
@@ -153,10 +154,12 @@ main > ul:first-of-type li a {
     justify-content: center;
 }
 
-    /* States Linkjes categorieën */
+/* STATES - Linkjes categorieën */
+    /* Hover */
 main > ul:first-of-type li a:hover {
     text-decoration-color: var(--text-color);
 }
+
 
 
 main > ul:first-of-type li a img {
@@ -170,7 +173,7 @@ main > ul:first-of-type li a p {
 }
 
 
-/* Support categorieën min 45em */
+/* MIN WITH 45EM - Support categorieën */
 @media (min-width:45em) {
     main > ul:first-of-type {
         padding: 0 12%;
@@ -215,7 +218,7 @@ main > ul:nth-of-type(2) li a img {
     padding-bottom: 1em;
 }
 
-/* Blokjes min 45em */
+/* MIN WITH 45EM - Blokjes */
 @media (min-width:45em) {
     main > ul:nth-of-type(2) {
         grid-template-columns: 1fr 1fr 1fr;
@@ -242,84 +245,58 @@ main section:nth-of-type(2) {
     margin-left: auto;
     margin-right: auto;
 }
-
-main section:nth-of-type(2) form{
+main section:nth-of-type(2) form {
     display: flex;
-    align-items: center;
+    gap:.5em;
+    margin-top: 2.5em;
 }
-      
+
 main section:nth-of-type(2) form input {
     display: block;
+    padding: 0.5em;
+    padding-left: 3em;
+
+    flex-grow:1;
+    
+    font-size: 1em;
+
+    background-color: var(--p-color2);
+    background-image: url(../images/Support/zoekicoon.svg);
+    background-repeat: no-repeat;
+    background-position-x: 1em;
+    background-position-y: center;
+    border: none;
+    border-radius: 0.5em;
+
+    color: var(--burger-button-color);
     border: solid 0.05em var(--border-footer);
     border-radius: 1em;
-    background-image: url(../images/Support/zoekicoon.svg);
-    background-size: 1.2em;
-    background-repeat: no-repeat;
-    background-position-x: 1.4em;
-    background-position-y: center ;
-    background-color: transparent;
-    width: 100%;
-    height: 3.8em;
-    z-index: 21;
-    padding-left: 3.4em;
-    font-size: 1.0625em;
-}
 
-main section:nth-of-type(2) form label {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    transition: .5s;
-    height: 1.5em;
-    left: 4em;
-    padding: .5em;
-    font-size: 1.0625em;
-    color: var(--burger-button-color);
-    z-index: 20;
+    height: 3.8em;
 }
 
 main section:nth-of-type(2) form button {
     position: absolute;
-    left: 60%;
+    right: 10%;
     padding-right: 0;
     background-color: transparent;
     border: none;
-    width: 3em;
-}
-
-    /* Zoekbalk :focus */
-main section:nth-of-type(2) form input:focus,
-main section:nth-of-type(2) form input:valid {
-    padding: 0.8em 3.4em .2em;
-    transition: 0.5s;
-    font-size: 1.0625em;
-    border: solid 0.0625em var(--form-border-active);
-    box-shadow: inset 0 0 0 .25em var(--form-border-active);
-}
-
-main section:nth-of-type(2) form input:focus + label,  
-main section:nth-of-type(2) form input:valid + label {
-    transform: translateY(-1em);
-    font-size: .75em;
-    left: 6.3em;
-}
-
-main section:nth-of-type(2) form:active {
-    border: solid 0.0625em var(--form-border-active);
+    width: 2.5em;
+    align-self: center;
 }
 
 
-/* Zoek naar onderwerpen min 45em */
+/* MIN 45 EM - Zoek naar onderwerpen */
 @media (min-width:45em) {
     main section:nth-of-type(2) {
         width: 80%;
     }
 
-    main section:nth-of-type(2) form input:focus + label,  
-    main section:nth-of-type(2) form input:valid + label {
-        transform: translateY(-1em);
-        font-size: .75em;
-        left: 14%;
+    main section:nth-of-type(2) form button {
+        position: absolute;
+        right: 12%;
+        padding-right: 0;
+        width: 2.5em;
     }
 }
 
@@ -472,7 +449,7 @@ main section:nth-of-type(10) div a {
     order: 4;
 }
 
-        /* 'Begin nu' button */
+    /* 'Begin nu' button */
 main section:nth-of-type(4) div a {
     align-self: center;
     background-color: var(--background-color2);
@@ -491,7 +468,8 @@ main section:nth-of-type(4) div a p {
 
 }
 
-    /* States open nav Linkjes */
+/* STATES - Begin nu button */
+    /* Hover */
 main section:nth-of-type(4) div a:hover {
     text-decoration: none;
     background-color: var(--button-hover);
@@ -499,21 +477,22 @@ main section:nth-of-type(4) div a:hover {
 
 main section:nth-of-type(4) div a p:hover {
     color: var(--p-color);
-}
-
+}   
+    /* Focus */
 main section:nth-of-type(4) div a:focus{
     text-decoration: none;
     background-color: var(--button-focus);
-    outline: none;
+    box-shadow:inset 0 0 0 .15em var(--button-active);
 }
 
 main section:nth-of-type(4) div a p:focus {
     color: var(--p-color);
 }
-
+    /* Active */
 main section:nth-of-type(4) div a:active {
     text-decoration: none;
-    background-color: var(--button-active);
+    background-color: var(--button-hover);
+    box-shadow: inset 0 0 1em .2em var(--button-active);
 }
 
 main section:nth-of-type(4) div a p:active {

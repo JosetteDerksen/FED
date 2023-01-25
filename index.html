@@ -17,40 +17,39 @@
 <body>
 	<header> 
 <!-- Navigatie (die altijd blijft staan) -->
-		<h1><a href="" aria-label="Homepagina Apple"><img class="navimg1" src="./images/mobile_homepage/icoon_applelogo.svg" alt=""></a></h1>
+		<h1><a href="" aria-label="Homepagina Apple"><img src="./images/mobile_homepage/icoon_applelogo.svg" alt=""></a></h1>
 
-		<button class="hamburgerbutton" aria-label="Hamburgermenu">
-			<span class="span1"></span>
-			<span class="span2"></span>
+		<button aria-label="Hamburgermenu">
+			<span></span>
+			<span></span>
 		</button>
 
-		<img class="zoekicoon" src="./images/mobile_homepage/zoekicoon.svg" alt="Zoeken op Apple.com">
+		<img src="./images/mobile_homepage/zoekicoon.svg" alt="Zoeken op Apple.com">
 		
-		<a href="" aria-label="Winkelwagen"><img class="navimg" src="./images/mobile_homepage/icoon_winkelwagen.svg" alt=""></a>
+		<a href="" aria-label="Winkelwagen"><img src="./images/mobile_homepage/icoon_winkelwagen.svg" alt=""></a>
 		
 
 
 
 <!-- Hamburger menu navigatie -->
 		<nav>
-			<form class="zoekform" action="/search">	
-				<input id="zoeken" type="text" name="search" placeholder="Zoeken op apple.com">
+			<form>	
 				<label for="zoeken">Zoeken</label>
+				<input id="zoeken" type="search" name="search" placeholder="Zoeken op apple.com">
+				<button type="reset">Annuleer</button>
 			</form>	
 
-			<span class="lijn"></span>
-
 			<ul>
-				<li><a class="navLink" href="">Store</a></li>
-				<li><a class="navLink" href="">Mac</a></li>
-				<li><a class="navLink" href="">iPad</a></li>
-				<li><a class="navLink" href="">iPhone</a></li>
-				<li><a class="navLink" href="">Watch</a></li>
-				<li><a class="navLink" href="">AirPods</a></li>
-				<li><a class="navLink" href="">TV & Woning</a></li>
-				<li><a class="navLink" href="">Alleen bij Apple</a></li>
-				<li><a class="navLink" href="">Accessoires</a></li>
-				<li><a class="navLink" href="./support.html">Support</a></li>
+				<li><a href="">Store</a></li>
+				<li><a href="">Mac</a></li>
+				<li><a href="">iPad</a></li>
+				<li><a href="">iPhone</a></li>
+				<li><a href="">Watch</a></li>
+				<li><a href="">AirPods</a></li>
+				<li><a href="">TV & Woning</a></li>
+				<li><a href="">Alleen bij Apple</a></li>
+				<li><a href="">Accessoires</a></li>
+				<li><a href="./support.html">Support</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -184,121 +183,123 @@
 
 <!-- Carousel -->
 
-			<section class="carousel">
+			<!-- gabasseerd op bron: https://codepen.io/shooft/pen/KKgXJVm, Dank je wel Sanne :D! -->
+
+			<section id="appleTvPlus" class="caroCarrousel" aria-label="Apple tv+" tabIndex="-1">
 				<ul>
-					<li>
+					<li id="element1">
 						<div>
 							<h3>Thriller</h3>
-							<p>Nadat een jonge wetenschapper wordt vermist, gaan haar man en broer op zoek.</p>
-							<a class="streambutton">
-								<p>Stream nu</p>
-								<img src="./images/mobile_homepage/play-button.png" alt="play">
-							</a>
+							<p>De redding is nog maar het begin.</p>
+							<a>Stream nu<img src="./images/mobile_homepage/play-button.png" alt=""></a>
 							<img src="./images/mobile_homepage/Carousel/1_appletv.png" alt="AppleTv+">
 							<img src="./images/mobile_homepage/Carousel/2_echo3_titel.png" alt="Echo 3">
 						</div>
-						<a class="grootimg" href="">
-							<img src="./images/mobile_homepage/Carousel/3_echo3.jpg" alt="">
+		
+						<a href="">
+							<picture>
+								<source srcset="./images/mobile_homepage/Carousel/3_echo3_large.jpg" media="(min-width: 46em)" />
+								<img src="./images/mobile_homepage/Carousel/3_echo3.jpg" alt="">
+							</picture>
 						</a>
 					</li>
 
-					<li>
+					<li id="element2">
 						<div>
 							<h3>Komedie</h3>
-							<p>Nadat een jonge wetenschapper wordt vermist, gaan haar man en broer op zoek.</p>
-							<a class="streambutton">
-								<p>Stream nu</p>
-								<img src="./images/mobile_homepage/play-button.png" alt="play">
-							</a>
+							<p>Topgeheim is te hoog gegrepen.</p>
+							<a>Stream nu<img src="./images/mobile_homepage/play-button.png" alt=""></a>
 							<img src="./images/mobile_homepage/Carousel/1_appletv.png" alt="AppleTv+">
 							<img src="./images/mobile_homepage/Carousel/4_slowhorses_titel.png" alt="">
 						</div>
-						<a class="grootimg" href="">
-							<img src="./images/mobile_homepage/Carousel/5_slowhorses.jpg" alt="">
+						<a href="">
+							<picture>
+								<source srcset="./images/mobile_homepage/Carousel/5_slowhorses_large.jpg" media="(min-width: 46em)" />
+								<img src="./images/mobile_homepage/Carousel/5_slowhorses.jpg" alt="">
+							</picture>
 						</a>
 					</li>
 
-					<li>
+					<li id="element3">
 						<div>
 							<h3>Drama</h3>
-							<p>Welkom in Bombay.</p>
-							<a class="streambutton">
-								<p>Stream nu</p>
-								<img src="./images/mobile_homepage/play-button.png" alt="play">
-							</a>
+							<p>Nieuw seizoen.</p>
+							<a>Stream nu<img src="./images/mobile_homepage/play-button.png" alt=""></a>
 							<img src="./images/mobile_homepage/Carousel/1_appletv.png" alt="AppleTv+">
-							<img src="./images/mobile_homepage/Carousel/6_spirited_titel.png" alt="">
+							<img src="./images/mobile_homepage/Carousel/6_truth_title.png" alt="">
 						</div>
-						<a class="grootimg" href="">
-							<img src="./images/mobile_homepage/Carousel/7_spirited.jpg" alt="">					
+						<a href="">
+							<picture>
+								<source srcset="./images/mobile_homepage/Carousel/6_truth_large.jpg" media="(min-width: 46em)" />
+								<img src="./images/mobile_homepage/Carousel/6_truth.jpg" alt="">
+							</picture>
 						</a>
 					</li>
 
-					<li>
+					<li id="element4">
 						<div>
-							<h3>Documentaire</h3>
-							<p>Iedere ademhaling is vooruitgang.</p>
-							<a class="streambutton">
-								<p>Stream nu</p>
-								<img src="./images/mobile_homepage/play-button.png" alt="play">
-							</a>
+							<h3>Drama</h3>
+							<p>Aangrijpende gebeurtenissen.</p>
+							<a>Stream nu<img src="./images/mobile_homepage/play-button.png" alt=""></a>
 							<img src="./images/mobile_homepage/Carousel/1_appletv.png" alt="AppleTv+">
-							<img src="./images/mobile_homepage/Carousel/9_selenagomez_titel.png" alt="">
+							<img src="./images/mobile_homepage/Carousel/15_emancipation_title.png" alt="">
 						</div>
-						<a class="grootimg" href="">
-							<img src="./images/mobile_homepage/Carousel/10_selenagomez.jpg" alt="">
+						<a href="">
+							<picture>
+								<source srcset="./images/mobile_homepage/Carousel/15_emancipation_large.jpg" media="(min-width: 46em)" />
+								<img src="./images/mobile_homepage/Carousel/15_emancipation.jpg" alt="">
+							</picture>
 						</a>
 					</li>
 
-					<li>
+					<li id="element5">
 						<div>
 							<h3>Thriller</h3>
 							<p>Elk antwoord heeft een prijs.</p>
-							<a class="streambutton">
-								<p>Stream nu</p>
-								<img src="./images/mobile_homepage/play-button.png" alt="play">
-							</a>
+							<a>Stream nu<img src="./images/mobile_homepage/play-button.png" alt=""></a>
 							<img src="./images/mobile_homepage/Carousel/1_appletv.png" alt="AppleTv+">
 							<img src="./images/mobile_homepage/Carousel/8_shantaram_titel.png" alt="">
 						</div>
-						<a class="grootimg" href="">
-							<img src="./images/mobile_homepage/Carousel/9_shantaram.jpg" alt="">
+						<a href="">
+							<picture>
+								<source srcset="./images/mobile_homepage/Carousel/9_shantaram_large.jpg" media="(min-width: 46em)" />
+								<img src="./images/mobile_homepage/Carousel/9_shantaram.jpg" alt="">
+							</picture>
 						</a>
-
 					</li>
 
-					<li>
+					<li id="element6">
 						<div>
 							<h3>Drama</h3>
 							<p> Begin opnieuw.</p>
-							<a class="streambutton">
-								<p>Stream nu</p>
-								<img src="./images/mobile_homepage/play-button.png" alt="play">
-							</a>
+							<a>Stream nu<img src="./images/mobile_homepage/play-button.png" alt=""></a>
 							<img src="./images/mobile_homepage/Carousel/1_appletv.png" alt="AppleTv+">
 							<img src="./images/mobile_homepage/Carousel/11_themosquitocoast_titel.png" alt="">
 						</div>
-						<a class="grootimg" href="">
-							<img src="./images/mobile_homepage/Carousel/12_themosquitocoast.jpg" alt="">
+						<a href="">
+							<picture>
+								<source srcset="./images/mobile_homepage/Carousel/12_themosquitocoast_large.jpg" media="(min-width: 46em)" />
+								<img src="./images/mobile_homepage/Carousel/12_themosquitocoast.jpg" alt="">
+							</picture>
 						</a>
 					</li>
-
-					<!-- Vorige en volgende button -->
-					<a class="prev"></a>
-					<a class="next"></a>
 				</ul>
-
-				<!-- Ronde navigatie knopjes beneden -->
-				<div>
-					<button></button>
-					<button></button>
-					<button></button>
-					<button></button>
-					<button></button>
-					<button></button>
-				</div>
-
-				<button type="button">play</button>
+				
+				<a href="previous" aria-label="Naar het element aan de linkerkant"></a>
+				<a href="next" aria-label="Naar het element aan de rechterkant"></a>
+				
+				<nav>
+					<ul>
+						<li><a href="#element1" aria-label="go to element1"></a></li>
+						<li><a href="#element2" aria-label="go to element2"></a></li>
+						<li><a href="#element3" aria-label="go to element3"></a></li>
+						<li><a href="#element4" aria-label="go to element4"></a></li>
+						<li><a href="#element5" aria-label="go to element5"></a></li>
+						<li><a href="#element6" aria-label="go to element6"></a></li>
+					</ul>
+				</nav>
+				
+				<button aria-label="start/stop autoscroll"></button>
 			</section>
 
 		</main>
@@ -312,7 +313,6 @@
 
 			<section>
 					<h4>Bestellen en informatie</h4>
-					<!-- <button type="button">+</button> -->
 					<ul>
 						<li>
 							<a href="">Store</a>
@@ -349,7 +349,6 @@
 
 				<section>
 					<h4>Services</h4>
-					<!-- <button type="button">+</button> -->
 					<ul>
 						<li>
 							<a href="">Apple Music</a>
@@ -375,7 +374,6 @@
 					</ul>
 
 					<h4>Account</h4>
-					<!-- <button type="button">+</button> -->
 					<ul>
 						<li>
 							<a href="">Je Apple ID beheren</a>
@@ -391,7 +389,6 @@
 
 				<section>
 					<h4>Apple Store</h4>
-					<!-- <button type="button">+</button> -->
 					<ul>
 						<li>
 							<a href="">Zoek een store</a>
@@ -425,7 +422,6 @@
 
 				<section>
 					<h4>Voor bedrijven</h4>
-					<!-- <button type="button">+</button> -->
 					<ul>
 						<li>
 							<a href="">Apple en het bedrijfsleven</a>
@@ -436,7 +432,6 @@
 					</ul>
 
 					<h4>Voor het onderwijs</h4>
-					<!-- <button type="button">+</button> -->
 					<ul>
 						<li>
 							<a href="">Apple en het onderwijs</a>
@@ -447,7 +442,6 @@
 					</ul>
 
 					<h4>Voor de gezondheidszorg</h4>
-					<!-- <button type="button">+</button> -->
 					<ul>
 						<li>
 							<a href="">Apple in de gezondheidszorg</a>
@@ -460,7 +454,6 @@
 
 				<section>
 					<h4>Waarden van Apple</h4>
-					<!-- <button type="button">+</button> -->
 					<ul>
 						<li>
 							<a href="">Toegankelijkheid</a>
@@ -474,7 +467,6 @@
 					</ul>
 
 					<h4>Over Apple</h4>
-					<!-- <button type="button">+</button> -->
 					<ul>
 						<li>
 							<a href="">Newsroom</a>
@@ -541,10 +533,5 @@
 	</footer>
 
 	<script defer src="./scripts/script.js"></script>
+	<script defer src="./scripts/carousel.js"></script>
 </body>
-
-
-
-
-
-Hoi Sanne k had nog een paar vraagjes,

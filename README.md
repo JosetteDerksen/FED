@@ -1,5 +1,3 @@
-# FED
-
 # Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
@@ -42,12 +40,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina 
-  ![Group 1](https://user-images.githubusercontent.com/70659177/205017983-679998bd-34c5-4c7f-a5b2-b67cf2536241.png)
+  ![Apple_Homepagine_Mobile 1](https://user-images.githubusercontent.com/70659177/214709650-ddd2682e-0d8c-44cd-b6d6-39d2edfbb2f2.png) 
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Accessories  
-  ![FireShot Capture 009 - Apple accessoires voor Apple Watch, iPhone, iPad, iPod en Mac - Apple_ - www apple com](https://user-images.githubusercontent.com/70659177/205018516-2f99c115-634c-4d1a-85b4-e1e99c8499b9.png)
+  Support
+  ![image](https://user-images.githubusercontent.com/70659177/214709511-cfb43c80-e6e8-4299-87b1-444b1f3eef1f.png)
+
 
 </details>
 
@@ -62,35 +61,53 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
+  Problemen Windows niveau
   - Je moet al heel veel shortcuts weten voordat je er handig gebruik van kan maken.
-  - Spreekt Engelse woorden heel Nederlands uit waardoor het niet altijd duidelijk is.
   - Zegt heel vaak 'koppeling'.
   - Kan niet typen als de verteller aanstaat.
-  - Er wordt gebruikt gemaakt van heel veel divjes. 
-  - Weinig onderbouwende tekst in de code zelf zoals een alt-tekst.  
-  - Er wordt wel gebruikt gemaakt van kopjes en linkjes. 
+  
+  Goed van Apple
+    - Er wordt wel gebruikt gemaakt van kopjes en linkjes. 
+   
+  Problemen Apple 
+ - [x] Er wordt gebruikt gemaakt van heel veel divjes.
+ - [x] Weinig onderbouwende tekst in de code zelf zoals een alt-tekst.   
+ - [x] Hamburgerbutton wordt voorgelezen als: 'Apple knop global nav open menu'.
+ - [ ] Spreekt Engelse woorden heel Nederlands uit waardoor het niet altijd duidelijk is.
 
-    Sommige punten zitten meer op Windows niveau dan op Apple niveau, zoals de shortcuts, het niet kunnen typen en dat Engelse woorden op een Nederlandse manier worden uitsproken. Op andere punten kan ik wel wat veranderen zoals dat er veel gebruikt wordt gemaakt van divjes inplaats van de juiste elementen en onderbouwende teksten toevoegen die screenreader kunnen voorlezen zodat een blind iemand weet wat er op een afbeelding staat. 
+Op te lossen door
+    -Minder divjes te gebruiken en meer gebruik te maken van de echte elementen.
+    - Code betere alt en aria tekst geven.
+    - Hamburgermenu een kortere naam geven.
+    - < html lang="en" > achter de engelse woorden te zetten.
+ 
+
+ Sommige punten zitten meer op Windows niveau dan op Apple niveau, zoals de shortcuts, het niet kunnen typen en dat Engelse woorden op een Nederlandse manier worden uitsproken. Op andere punten kan ik wel wat veranderen zoals dat er veel gebruikt wordt gemaakt van divjes inplaats van de juiste elementen en onderbouwende teksten toevoegen die screenreader kunnen voorlezen zodat een blind iemand weet wat er op een afbeelding staat. 
 
   #### Muis en Toetsenbord 
+  Problemen Windows niveau
   - Veel shortcuts maar opzich makkelijk te vinden. 
+  
+   Goed van Apple
   - Hover over links werkt. Komt een blauwe streep onder te staan. 
   - Muis veranderd in een handje op de klikbare plekken. 
   - Kan door de carousel scrollen met m'n pijltjes toetsen. 
 
   #### Motoriek (shocks, elastiekjes)
   - Met het trilding om parkinson na te bootsen was het vreselijk moeilijk om te typen. Typt snel dubbele letters. 
-  
-  Ik kan dit oplossen door het toetsenbord minder gevoelig te maken? 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  - Hover over navigatie zie je een klein beetje kleur verandering (van grijs naar wit) maar niet genoeg voor als je iets slechter kan zien.
-  - Navigatie is heel erg klein vergeleken met de rest van de website. 
+  Goed van Apple
+    - Contrast op de rest van de website best goed. Veel gebruik gemaakt van zwart-wit. 
+
+Problemen Apple
+ - [x] Hover over navigatie zie je een klein beetje kleur verandering (van grijs naar wit) maar niet genoeg voor als je iets slechter kan zien.
   ![image](https://user-images.githubusercontent.com/70659177/205011242-6a0a51e5-8485-41f9-8622-efea607a96d9.png)
   ![image](https://user-images.githubusercontent.com/70659177/205011278-d259293e-c710-4a4a-94b4-35e239a16a55.png)
-  - Contrast op de rest van de website best goed. Veel gebruik gemaakt van zwart-wit. 
 
-  Ik kan de navigatie groter maken met een betere hover kleur. 
+  
+  Op te lossen door:
+  - Betere hover kleur. Streepje onder hover.  
 
 </details>
 
@@ -174,8 +191,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  Ik kwam een beetje laat op gang, omdat ik niet wist waar ik moest beginnen, maar langzaam komt het bij elkaar. 
+ Ik kwam een beetje laat op gang, omdat ik niet wist waar ik moest beginnen, maar langzaam komt het bij elkaar. 
   
   ![voortgang2](https://user-images.githubusercontent.com/70659177/207878474-9461497e-d0de-4751-a61d-5472549d9593.png)
   ![image](https://user-images.githubusercontent.com/70659177/207880138-88395fbe-b04b-4fa1-8015-59352acb3c57.png)
@@ -189,7 +205,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Randy      | Josette          | student 3    | student 4        |
+  | Randy      | Josette          | Arsen    | Tim en Redouane        | 
   | ---            | ---                | ---          | ---              |
   | Hoe kun je het verticaal positioneren van een list-style-image het besten aanpakken?  | Waarom werkt mijn hamburgermenu niet?           | en ik dit    | en dan ik dat    |
   | Hoe verberg je zelfgemaakte semantische kopjes? | Hoe komt het dat alles in mijn header te hoog staat terwijl ik het heb gecentreerd? | nog een punt | dit wil ik zeker |
@@ -200,8 +216,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 | ...          | Is de footer ook een nav of niet en moeten de uitklapmenu’s werken?             |
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
   - Javascript moet in de html helemaal onderaan.
   - Je kan meerdere navs hebben op 1 pagina (ook footer).
   - Span als streepjes voor het hamburgermenu mag. 
@@ -223,18 +237,35 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+ - [x] Veel afbeeldingen zijn 'img' zonder verdere beschrijving zoals het Apple logo. 
+ - [x] Hamburgermenu knop is nu gewoon 'knop'.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Kan opgelost worden door:
+  - Alt teksten en aria-labels toe te voegen.
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+ - [ ] Slaat de 'zoekimg' over. 
+ - [ ] Selecteerd ook de rest van de pagina als het hamburgermenu open staat. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Kan opgelost worden door: 
+  - Volgorde nav aan te passen?
+
+  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
+  
+
+ - [x] Link kleur is slecht (donker paars).
+ - [x] Linkjes staan op afbeeldingen dit maakt het moeilijk te lezen.
+ - [x] Knoppen en linkjes hebben nog geen states.
+
+  Kan opgelost worden door:
+  - Plaatjes kleiner te maken (vooral op dekstop).
+  - Streep onder de linkjes te laten verschijnen als je hovert.
+  - Kleur van de linkjes blauw maken.
+  - Knoppen en linkjes states geven. 
 
 
   #### Motoriek (shocks, elastiekjes)
@@ -242,11 +273,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
 
@@ -257,16 +283,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 3 (week 7)
 
 <details>
-  <summary>uitwerken voor 3e voortgang</summary>
+![image](https://user-images.githubusercontent.com/70659177/214709167-9a49b09e-188c-41bd-8d1a-026c6f8c0e88.png) 
+![image](https://user-images.githubusercontent.com/70659177/214709404-10f479b0-f9e0-46fd-855f-014b0667de74.png)
+
+
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Had in de vakantie meer willen doen, maar heb daar de tijd niet voor genomen. Nu voor mijn gevoel het makkelijkste is geweest vind ik het moeilijker om het leuk te vinden. Ik hou van direct resultaat en dat gaat met code vaak niet hahaha... 
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
 
-  | Josette      | Tim          | student 3    | student 4        |
+  | Josette      | Tim          | Arsen    | Randy        |
   | ---            | ---                | ---          | ---              |
   | Hoe krijg ik de linkjes “meer informatie” en “koop” naast elkaar?  | Hoe kan ik een video (iframe) responsive maken, maar wel een 16:9 ratio behouden?            |     | Mijn footer is niet meer te zien.    |
   | Waarom komt mijn menu niet over de breedte als ik het scherm groot maak? | Uitleggen hoe radio button in eigen stijl te werk gaat. | nog een punt | dit wil ik zeker |
@@ -276,12 +304,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  
+Placeholder Label
+  
+![](https://lh4.googleusercontent.com/OWKEYr1DFhwxjwZfG-6ySjgD45UW9vbu8uomEr171l0Y1v9MWq_45A1nocmubFWTTGxYqqIiL-6PTOvxsiQu1unvT9pug7-erzCA-9vHdUxcYr5k1d2R6awKCanhVGTaWiySdV_cyJJmeKE63kBeopKoS3DvQS24qTH33xeB23SdskIlsPAuhOkBAHUO9Q)
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+search
+
+  
+  
+
+-   Enkel alles naast elkaar = flex.
+    
+-   Enkel alles onder elkaar = grid.
 
 </details>
 
@@ -321,8 +356,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
+  1. https://codepen.io/shooft/pens/public Voornamelijk Sanne's codepens.
+  2. https://www.apple.com/nl/ Ik een stukjes code overgenomen (de header blur).
   3. ...
 
 </details>

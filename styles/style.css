@@ -103,13 +103,14 @@ main a {
 }
 
 /* STATES - main Linkjes */
+    /* Hover */
 main a:hover {
     text-decoration: underline;
     text-decoration-thickness: 0.08em;
     text-underline-offset: 0.3em;
     text-decoration-color: var(--a-color);
 }
-
+    /* Focus */
 main a:focus{
     text-decoration: underline;
     text-decoration-thickness: 0.08em;
@@ -118,7 +119,7 @@ main a:focus{
     font-weight: bold;
     outline-color: .1em var(--form-border-active);
 }
-
+    /* Active */
 main a:active {
     text-decoration: underline;
     text-decoration-thickness: 0.08em;
@@ -127,11 +128,12 @@ main a:active {
     color: var(--text-color);
     font-weight: bold;
 }
-
-main a:visited {
+    /* Visited */
+/* main a:visited {
+    color: var(--a-visited);
     text-decoration-thickness: 0.08em;
     text-underline-offset: 0.3em;
-}
+} */
 
 
 

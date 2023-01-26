@@ -320,7 +320,7 @@ search
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
@@ -346,10 +346,12 @@ search
   <img src="readme-images/gespeeld_met_animatie.png" width="375px" alt="top">
 
   Deze prachtige buttons weergegeven met een box-shadow:
-  <img src="readme-images/styling_button_eindverslag.png" width="375px" alt="top">
+  <img src="readme-images/styling_button_eindverslag.png" width="375px" alt="button ingedrukt">![styling_button_eindverslag](https://user-images.githubusercontent.com/70659177/214886844-d8a3b6d7-3fa5-473c-8504-1f5275fa4799.png)
+
 
   Verschillende states toegepast:
-  <img src="readme-images/states.png" width="375px" alt="top">
+  <img src="readme-images/states.png" width="375px" alt="states in css">![states](https://user-images.githubusercontent.com/70659177/214886806-9dcb6166-3553-4b30-b55f-9cf4ef437998.png)
+
 
   Hamburgermenu met javascript werkt!:
   <img src="readme-images/hamburgermenu.png" width="375px" alt="top">
